@@ -1,0 +1,47 @@
+body {
+    font-family: Georgia;
+    color: #1c0631;
+    background-color: #836d98;
+    font-size: 22px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 50px;
+}
+header {
+    color: #fff;
+    font-family: Georgia;
+    padding: 20px;
+    text-align: right;
+    background-color: #534460;
+}
+    header nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+
+    header nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    header nav a:hover {
+        color: red;
+    }
+
+footer {
+    margin-top: 700px;
+    padding: 75px;
+    background-color: #000000;
+    color: aliceblue;
+    text-align: center;
+}
