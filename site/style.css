@@ -1,41 +1,56 @@
 body {
-    font-family: Georgia;
+    font-family: Georgia, serif;
     color: #1c0631;
     background-color: #836d98;
     font-size: 22px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-size: 50px;
+    margin: 0;
 }
+
 header {
-    color: #fff;
-    font-family: Georgia;
-    padding: 20px;
-    text-align: right;
     background-color: #534460;
+    color: #fff;
+    padding: 20px;
 }
-    header nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Лого слева, навигация справа */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Добавляем flex для ul, чтобы управлять расстоянием между li */
+    align-items: center; /* Выравниваем пункты меню по вертикали */
+}
+
+    header nav ul li {
+        display: inline; /* Оставляем inline, чтобы пункты были в строку */
+        margin-left: 20px;
     }
 
-        header nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-
-    header nav a {
-        color: #fff;
-        text-decoration: none;
-    }
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
     header nav a:hover {
-        color: red;
+        color: #ff4081;
     }
 
 footer {
@@ -44,4 +59,9 @@ footer {
     background-color: #000000;
     color: aliceblue;
     text-align: center;
+}
+
+.logo a {
+    color: inherit; /* Наследуем цвет от родительского элемента (h1) */
+    text-decoration: none; /* Убираем подчеркивание ссылки */
 }
