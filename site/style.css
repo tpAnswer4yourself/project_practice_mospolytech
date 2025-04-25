@@ -65,3 +65,408 @@ footer {
     color: inherit; /* Наследуем цвет от родительского элемента (h1) */
     text-decoration: none; /* Убираем подчеркивание ссылки */
 }
+
+
+
+
+
+
+/* Стили для секции "Участники" */
+.people {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+    .people h2 {
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 30px;
+        animation: fadeIn 1.5s ease-in-out; /* Добавляем анимацию */
+    }
+
+/* Стили для списка участников */
+.people-list {
+    list-style: none; /* Убираем маркеры */
+    padding-left: 0; /* Убираем отступ */
+    gap: 20px; /* Расстояние между элементами */
+}
+
+    .people-list li {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        margin-bottom: 20px; /* Добавляем отступ снизу */
+        display: flex; /* Добавляем flex для выравнивания фото и текста */
+        align-items: center; /* Выравниваем по вертикали */
+    }
+
+        .people-list li:hover {
+            transform: scale(1.015); /* Уменьшаем увеличение в два раза */
+        }
+
+    .people-list h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .people-list p {
+        line-height: 1.6;
+    }
+
+    .people-list strong {
+        font-weight: bold;
+    }
+
+/* Стили для фотографии участника */
+.member-photo {
+    width: 80px; /* Ширина фотографии */
+    height: 80px; /* Высота фотографии */
+    border-radius: 50%; /* Делаем круглой */
+    margin-right: 15px; /* Отступ справа от фотографии */
+    object-fit: cover; /* Обрезаем изображение, чтобы поместилось в круг */
+    object-position: center; /* Центрируем изображение */
+}
+
+
+
+
+
+
+/* Общие стили (без изменений) */
+.about-project {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+    .about-project h2 {
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 30px;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .about-project h3 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .about-project p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+/* Стили для списка задач (без изменений) */
+.task-list {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+    .task-list li {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+        .task-list li:hover {
+            transform: scale(1.05);
+        }
+
+/* Стили для списка актуальности (новые) */
+.relevance-list {
+    list-style: none; /* Убираем маркеры */
+    padding-left: 0; /* Убираем отступ */
+    display: grid; /* Используем grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивные колонки */
+    gap: 20px; /* Расстояние между элементами */
+}
+
+    .relevance-list li {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+        .relevance-list li:hover {
+            transform: scale(1.05);
+        }
+
+/* Анимация (без изменений) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+/* Стили для секции "Ресурсы" (без изменений) */
+.resources {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+    .resources h2 {
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 30px;
+        animation: fadeIn 1.5s ease-in-out; /* Добавляем анимацию */
+    }
+
+/* Стили для списка ресурсов */
+.resource-list {
+    list-style: none; /* Убираем маркеры */
+    padding-left: 0; /* Убираем отступ */
+    gap: 20px; /* Расстояние между элементами */
+}
+
+    .resource-list li {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px; /* Добавляем отступ снизу */
+        display: flex; /* Используем flexbox */
+        justify-content: space-between; /* Размещаем контент и кнопку по краям */
+        align-items: center; /* Выравниваем по вертикали */
+        padding-right: 35px; /* Добавляем отступ справа, чтобы кнопка была дальше от края */
+    }
+
+    .resource-list h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .resource-list p {
+        line-height: 1.6;
+    }
+
+/* Стили для кнопки */
+.resource-button {
+    background-color: #534460;
+    color: #fff;
+    padding: 12px 24px; /* Увеличиваем отступы, чтобы кнопка была больше */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    font-size: 1.1em; /* Немного увеличим шрифт */
+}
+
+    .resource-button:hover {
+        background-color: #ff4081; /* Цвет при наведении */
+    }
+
+
+
+
+
+
+/* Стили для секции "Новости" */
+.news {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+    .news h2 {
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 30px;
+        animation: fadeIn 1.5s ease-in-out; /* Добавляем анимацию */
+    }
+
+/* Стили для элемента новости */
+.news-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .news-item h3 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .news-item p {
+        line-height: 1.6;
+    }
+
+.news-date {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Стили для изображений и видео */
+.news-image {
+    max-width: 100%; /* Изображение не больше контейнера */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.news-video {
+    max-width: 100%; /* Видео не больше контейнера */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+/* Стили для Hero Banner */
+.hero {
+    position: relative; /* Чтобы псевдоэлемент был относительно этого контейнера */
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+    overflow: hidden; /* Предотвращаем выход контента за границы */
+}
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* Добавляем градиент поверх изображения */
+        background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0) 0%, rgba(131,109,152, 1) 100%), url('yazahozhu.jpg'); /* Замени на свой URL */
+        background-size: cover;
+        background-position: center;
+        filter: blur(7px); /* Размытие для фона */
+        z-index: -1; /* Помещаем псевдоэлемент под контент */
+    }
+
+.hero-content {
+    max-width: 3000px;
+    margin: 0 auto;
+    position: relative; /* Чтобы контент был над псевдоэлементом */
+    padding: 40px; /* Добавляем немного отступов для контента */
+    background-color: rgba(0, 0, 0, 0.3); /* Добавляем полупрозрачный фон для лучшей читаемости */
+    border-radius: 10px; /* Скругляем углы */
+}
+
+.hero h1 {
+    font-size: 5em;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Добавляем тень для лучшей видимости текста */
+    animation: fadeIn 2s ease-in-out; /* Добавляем анимацию */
+
+}
+
+.hero p {
+    font-size: 1.5em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Добавляем тень для лучшей видимости текста */
+}
+
+.hero-button {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Чтобы можно было задать отступы */
+}
+
+    .hero-button:hover {
+        background-color: #000000;
+    }
+
+/* Стили для секции "О проекте" */
+.about-section {
+    padding: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+    .about-section h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    .about-section p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+.read-more-button {
+    background-color: #534460;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+    .read-more-button:hover {
+        background-color: #ff4081;
+    }
+
+/* Дополнительные стили для красоты */
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* Анимация (если еще не определена) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
