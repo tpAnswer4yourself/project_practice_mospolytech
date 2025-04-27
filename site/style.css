@@ -54,7 +54,7 @@ header nav a {
     }
 
 footer {
-    margin-top: 700px;
+    margin-top: 300px;
     padding: 75px;
     background-color: #000000;
     color: aliceblue;
@@ -96,9 +96,9 @@ footer {
 
     .people-list li {
         background-color: #fff;
-        padding: 15px;
+        padding: 30px;
         border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         transition: transform 0.3s ease;
         margin-bottom: 20px; /* Добавляем отступ снизу */
         display: flex; /* Добавляем flex для выравнивания фото и текста */
@@ -124,8 +124,8 @@ footer {
 
 /* Стили для фотографии участника */
 .member-photo {
-    width: 80px; /* Ширина фотографии */
-    height: 80px; /* Высота фотографии */
+    width: 100px; /* Ширина фотографии */
+    height: 100px; /* Высота фотографии */
     border-radius: 50%; /* Делаем круглой */
     margin-right: 15px; /* Отступ справа от фотографии */
     object-fit: cover; /* Обрезаем изображение, чтобы поместилось в круг */
@@ -183,6 +183,168 @@ footer {
         .task-list li:hover {
             transform: scale(1.05);
         }
+
+/* Стили для карты стейкхолдеров */
+.stakeholder-map {
+    max-width: 100%; /* Чтобы изображение не вылезало за контейнер */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+
+/* Стили для структуры работы в проекте */
+/* === Стили для структуры работы в проекте === */
+
+/* Общая структура */
+.project-structure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%; /* Занимает всю доступную ширину */
+    position: relative; /* Важно для позиционирования линий */
+}
+
+/* === Верхние уровни: Руководство и Координатор === */
+.top-levels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Общие стили для узлов */
+.node {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    margin-bottom: 20px; /* Больше отступ между узлами */
+    position: relative; /*  Для позиционирования линий */
+}
+
+/* === Ветви === */
+.branches {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px; /* Отступ от верхнего уровня */
+    position: relative; /* Важно для позиционирования линий */
+}
+
+.branch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Важно для позиционирования линий */
+    padding-top: 40px; /*  Чтобы было место для линии */
+}
+
+/* === Подузлы === */
+.sub-node {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    margin-top: 10px;
+}
+
+/* ================== Линии ================== */
+
+/* Линия от "Руководство" к "Главный координатор" */
+.node:first-child::after { /* first-child вместо second-level (класс удален)*/
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 130px; /* Длина линии */
+    background-color: #ff4081; /* Цвет линии */
+}
+
+/* Линия между "Главным координатором" и ветвями */
+.branches::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Выравниваем по верхнему краю */
+    left: 50%; /* Начинаем из центра */
+    transform: translateX(-50%); /* Сдвигаем влево на половину ширины */
+    width: 75%; /* Ширина линии (можно регулировать) */
+    height: 2px;
+    background-color: #ff4081;
+}
+
+/* Вертикальные линии от "Главного координатора" к ветвям */
+.branch::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 45px; /* Доходит до верхнего края .branch */
+    background-color: #ff4081;
+}
+
+/* Линия внутри ветви (от родительского узла к sub-node) */
+.branch > .node:not(.sub-node)::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 180px; /* Длина линии */
+    background-color: #ff4081;
+}
+
+.branch .sub-node {
+    position: relative;
+}
+
+/* Убираем линию для последнего sub-node в ветке
+   Если нужно чтобы линия тянулась до самого нижнего, удали этот блок */
+.branch > *:last-child::after {
+    content: none;
+}
+
+
+
+/* Стили для таблицы ЦА */
+.audience-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+    .audience-table th,
+    .audience-table td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .audience-table thead th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    .audience-table tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+
+
+  
+
 
 /* Стили для списка актуальности (новые) */
 .relevance-list {
@@ -402,7 +564,7 @@ footer {
     padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
     transition: background-color 0.3s ease;
     display: inline-block; /* Чтобы можно было задать отступы */
 }
@@ -414,8 +576,8 @@ footer {
 /* Стили для секции "О проекте" */
 .about-section {
     padding: 30px;
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 1200px;
+    margin: 35px auto;
     background-color: #f9f9f9;
     border-radius: 5px;
     text-align: center;
@@ -423,21 +585,21 @@ footer {
 
     .about-section h2 {
         font-size: 2.5em;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .about-section p {
         line-height: 1.6;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
 .read-more-button {
     background-color: #534460;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.15s ease;
 }
 
     .read-more-button:hover {
@@ -458,7 +620,7 @@ a {
         text-decoration: underline;
     }
 
-/* Анимация (если еще не определена) */
+/* Анимация */
 @keyframes fadeIn {
     from {
         opacity: 0;
