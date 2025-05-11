@@ -8,7 +8,7 @@
 | Стороженко Святослав Валерьевич | 241-326 | 09.03.01 | Системная и программная инженерия |
 
 ## Задание
-
+Готовый сайт - [открыть](https://github.com/tpAnswer4yourself/project_practice_mospolytech/blob/main/site/index.html)
 Задание размещено в папке **task** в файле [README.md](task/README.md).
 
 ## Вариативная часть задания
