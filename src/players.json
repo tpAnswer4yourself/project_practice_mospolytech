@@ -1,0 +1,65 @@
+{
+    "825960448": {
+        "username": "admin",
+        "coins": 700,
+        "click_power": 19,
+        "autoclick": 25,
+        "total_clicks": 787,
+        "last_update": 1746715748,
+        "telegram_id": "825960448"
+    },
+    "5195502175": {
+        "username": "Tpanswer4",
+        "coins": 546,
+        "click_power": 12,
+        "autoclick": 8,
+        "total_clicks": 1970,
+        "last_update": 1746469855,
+        "telegram_id": "5195502175"
+    },
+    "818168002": {
+        "username": "twinkerrr",
+        "coins": 8690,
+        "click_power": 13,
+        "autoclick": 19,
+        "total_clicks": 487,
+        "last_update": 1746531434,
+        "telegram_id": "818168002"
+    },
+    "7972335123": {
+        "username": "\u0412\u043e\u0432\u0438\u043a",
+        "coins": 0,
+        "click_power": 1,
+        "autoclick": 0,
+        "total_clicks": 0,
+        "last_update": 1746467091,
+        "telegram_id": "7972335123"
+    },
+    "690258910": {
+        "username": "\u0441\u0435\u043c\u0435\u043d",
+        "coins": 0,
+        "click_power": 1,
+        "autoclick": 0,
+        "total_clicks": 103,
+        "last_update": 1746474329,
+        "telegram_id": "690258910"
+    },
+    "5084001528": {
+        "username": "\u041c\u043e\u0449\u044c",
+        "coins": 11,
+        "click_power": 1,
+        "autoclick": 0,
+        "total_clicks": 11,
+        "last_update": 1746546930,
+        "telegram_id": "5084001528"
+    },
+    "1776539768": {
+        "username": "\u042f\u0448\u0430 \u041b\u0430\u0432\u0430",
+        "coins": 4,
+        "click_power": 2,
+        "autoclick": 0,
+        "total_clicks": 203,
+        "last_update": 1746716336,
+        "telegram_id": "1776539768"
+    }
+}
