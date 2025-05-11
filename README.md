@@ -12,7 +12,7 @@
 Задание размещено в папке **task** в файле [README.md](task/README.md).
 
 ## Вариативная часть задания
-###2. Практическая реализация технологии
+### 2. Практическая реализация технологии
 1.Выбранная технология из [репозитория](https://github.com/codecrafters-io/build-your-own-x): Build your own Bot
 2.Выбранная тема: [How to Create a Telegram Bot using Python](https://www.freecodecamp.org/news/how-to-create-a-telegram-bot-using-python/)
 3.Провести исследование: изучить, как создать выбранную технологию с нуля, воспроизвести практическую часть.
