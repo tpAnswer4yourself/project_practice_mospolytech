@@ -1,5 +1,5 @@
 # Отчёты в бинарных форматах
-### Нестерчук Антон Васильевич - [Отчет по взаимодействию с организациями-партнерами](reports/report_with_partner_nesterchuk.md)
+### Нестерчук Антон Васильевич - [Отчет по взаимодействию с организациями-партнерами](https://github.com/tpAnswer4yourself/project_practice_mospolytech/blob/main/reports/report_with_partner_nesterchuk.md)
 ### Стороженко Святослав Валерьевич - [Отчет по взаимодействию с организациями-партнерами]()
 
 - Файлы могут быть в форматах DOCX, PDF и др.
