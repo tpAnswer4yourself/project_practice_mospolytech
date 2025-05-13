@@ -12,6 +12,8 @@
 ## Задание
 Задание размещено в папке **task** в файле [README.md](task/README.md).
 
+**Статический сайт - [`ОТКРЫТЬ`](https://tpanswer4yourself.github.io/project_practice_mospolytech/site/index.html)**
+
 ## Вариативная часть задания
 ### 2. Практическая реализация технологии
 1. Выбранная технология из [репозитория](https://github.com/codecrafters-io/build-your-own-x): Build your own Bot <br>
