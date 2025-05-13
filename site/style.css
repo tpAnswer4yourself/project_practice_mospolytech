@@ -20,7 +20,7 @@ header {
 
 .header-container {
     display: flex;
-    justify-content: space-between; /* Лого слева, навигация справа */
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -34,12 +34,12 @@ header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Добавляем flex для ul, чтобы управлять расстоянием между li */
-    align-items: center; /* Выравниваем пункты меню по вертикали */
+    display: flex;
+    align-items: center;
 }
 
     header nav ul li {
-        display: inline; /* Оставляем inline, чтобы пункты были в строку */
+        display: inline;
         margin-left: 20px;
     }
 
@@ -62,8 +62,8 @@ footer {
 }
 
 .logo a {
-    color: inherit; /* Наследуем цвет от родительского элемента (h1) */
-    text-decoration: none; /* Убираем подчеркивание ссылки */
+    color: inherit;
+    text-decoration: none;
 }
 
 
@@ -71,7 +71,7 @@ footer {
 
 
 
-/* Стили для секции "Участники" */
+
 .people {
     padding: 30px;
     max-width: 1200px;
@@ -84,14 +84,14 @@ footer {
         font-size: 3em;
         text-align: center;
         margin-bottom: 30px;
-        animation: fadeIn 1.5s ease-in-out; /* Добавляем анимацию */
+        animation: fadeIn 1.5s ease-in-out;
     }
 
-/* Стили для списка участников */
+
 .people-list {
-    list-style: none; /* Убираем маркеры */
-    padding-left: 0; /* Убираем отступ */
-    gap: 20px; /* Расстояние между элементами */
+    list-style: none;
+    padding-left: 0;
+    gap: 20px;
 }
 
     .people-list li {
@@ -100,13 +100,13 @@ footer {
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         transition: transform 0.3s ease;
-        margin-bottom: 20px; /* Добавляем отступ снизу */
-        display: flex; /* Добавляем flex для выравнивания фото и текста */
-        align-items: center; /* Выравниваем по вертикали */
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
     }
 
         .people-list li:hover {
-            transform: scale(1.015); /* Уменьшаем увеличение в два раза */
+            transform: scale(1.015);
         }
 
     .people-list h3 {
@@ -122,14 +122,14 @@ footer {
         font-weight: bold;
     }
 
-/* Стили для фотографии участника */
+
 .member-photo {
-    width: 100px; /* Ширина фотографии */
-    height: 100px; /* Высота фотографии */
-    border-radius: 50%; /* Делаем круглой */
-    margin-right: 15px; /* Отступ справа от фотографии */
-    object-fit: cover; /* Обрезаем изображение, чтобы поместилось в круг */
-    object-position: center; /* Центрируем изображение */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    object-position: center;
 }
 
 
@@ -137,7 +137,7 @@ footer {
 
 
 
-/* Общие стили (без изменений) */
+
 .about-project {
     padding: 30px;
     max-width: 1200px;
@@ -163,7 +163,7 @@ footer {
         margin-bottom: 20px;
     }
 
-/* Стили для списка задач (без изменений) */
+
 .task-list {
     list-style: none;
     padding-left: 0;
@@ -184,9 +184,9 @@ footer {
             transform: scale(1.05);
         }
 
-/* Стили для карты стейкхолдеров */
+
 .stakeholder-map {
-    max-width: 100%; /* Чтобы изображение не вылезало за контейнер */
+    max-width: 100%;
     height: auto;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -194,27 +194,27 @@ footer {
 }
 
 
-/* Стили для структуры работы в проекте */
-/* === Стили для структуры работы в проекте === */
 
-/* Общая структура */
+
+
+
 .project-structure {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
-    width: 100%; /* Занимает всю доступную ширину */
-    position: relative; /* Важно для позиционирования линий */
+    width: 100%;
+    position: relative;
 }
 
-/* === Верхние уровни: Руководство и Координатор === */
+
 .top-levels {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Общие стили для узлов */
+
 .node {
     background-color: #ff4081;
     color: #fff;
@@ -223,28 +223,28 @@ footer {
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     width: 200px;
-    margin-bottom: 20px; /* Больше отступ между узлами */
-    position: relative; /*  Для позиционирования линий */
+    margin-bottom: 20px;
+    position: relative;
 }
 
-/* === Ветви === */
+
 .branches {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-top: 20px; /* Отступ от верхнего уровня */
-    position: relative; /* Важно для позиционирования линий */
+    margin-top: 20px;
+    position: relative;
 }
 
 .branch {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative; /* Важно для позиционирования линий */
-    padding-top: 40px; /*  Чтобы было место для линии */
+    position: relative;
+    padding-top: 40px;
 }
 
-/* === Подузлы === */
+
 .sub-node {
     background-color: #ff4081;
     color: #fff;
@@ -256,33 +256,33 @@ footer {
     margin-top: 10px;
 }
 
-/* ================== Линии ================== */
 
-/* Линия от "Руководство" к "Главный координатор" */
-.node:first-child::after { /* first-child вместо second-level (класс удален)*/
+
+
+.node:first-child::after {
     content: "";
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
     width: 2px;
-    height: 130px; /* Длина линии */
-    background-color: #ff4081; /* Цвет линии */
+    height: 130px;
+    background-color: #ff4081;
 }
 
-/* Линия между "Главным координатором" и ветвями */
+
 .branches::before {
     content: "";
     position: absolute;
-    top: 0; /* Выравниваем по верхнему краю */
-    left: 50%; /* Начинаем из центра */
-    transform: translateX(-50%); /* Сдвигаем влево на половину ширины */
-    width: 75%; /* Ширина линии (можно регулировать) */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
     height: 2px;
     background-color: #ff4081;
 }
 
-/* Вертикальные линии от "Главного координатора" к ветвям */
+
 .branch::before {
     content: "";
     position: absolute;
@@ -290,11 +290,11 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     width: 2px;
-    height: 45px; /* Доходит до верхнего края .branch */
+    height: 45px;
     background-color: #ff4081;
 }
 
-/* Линия внутри ветви (от родительского узла к sub-node) */
+
 .branch > .node:not(.sub-node)::after {
     content: "";
     position: absolute;
@@ -302,7 +302,7 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     width: 2px;
-    height: 180px; /* Длина линии */
+    height: 180px;
     background-color: #ff4081;
 }
 
@@ -310,15 +310,15 @@ footer {
     position: relative;
 }
 
-/* Убираем линию для последнего sub-node в ветке
-   Если нужно чтобы линия тянулась до самого нижнего, удали этот блок */
+
+
 .branch > *:last-child::after {
     content: none;
 }
 
 
 
-/* Стили для таблицы ЦА */
+
 .audience-table {
     width: 100%;
     border-collapse: collapse;
@@ -346,13 +346,13 @@ footer {
   
 
 
-/* Стили для списка актуальности (новые) */
+
 .relevance-list {
-    list-style: none; /* Убираем маркеры */
-    padding-left: 0; /* Убираем отступ */
-    display: grid; /* Используем grid */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивные колонки */
-    gap: 20px; /* Расстояние между элементами */
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
     .relevance-list li {
@@ -367,7 +367,7 @@ footer {
             transform: scale(1.05);
         }
 
-/* Анимация (без изменений) */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -385,7 +385,7 @@ footer {
 
 
 
-/* Стили для секции "Ресурсы" (без изменений) */
+
 .resources {
     padding: 30px;
     max-width: 1200px;
@@ -398,14 +398,14 @@ footer {
         font-size: 3em;
         text-align: center;
         margin-bottom: 30px;
-        animation: fadeIn 1.5s ease-in-out; /* Добавляем анимацию */
+        animation: fadeIn 1.5s ease-in-out;
     }
 
-/* Стили для списка ресурсов */
+
 .resource-list {
-    list-style: none; /* Убираем маркеры */
-    padding-left: 0; /* Убираем отступ */
-    gap: 20px; /* Расстояние между элементами */
+    list-style: none;
+    padding-left: 0;
+    gap: 20px;
 }
 
     .resource-list li {
@@ -413,11 +413,11 @@ footer {
         padding: 15px;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px; /* Добавляем отступ снизу */
-        display: flex; /* Используем flexbox */
-        justify-content: space-between; /* Размещаем контент и кнопку по краям */
-        align-items: center; /* Выравниваем по вертикали */
-        padding-right: 35px; /* Добавляем отступ справа, чтобы кнопка была дальше от края */
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 35px;
     }
 
     .resource-list h3 {
@@ -429,20 +429,20 @@ footer {
         line-height: 1.6;
     }
 
-/* Стили для кнопки */
+
 .resource-button {
     background-color: #534460;
     color: #fff;
-    padding: 12px 24px; /* Увеличиваем отступы, чтобы кнопка была больше */
+    padding: 12px 24px;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
     white-space: nowrap;
-    font-size: 1.1em; /* Немного увеличим шрифт */
+    font-size: 1.1em;
 }
 
     .resource-button:hover {
-        background-color: #ff4081; /* Цвет при наведении */
+        background-color: #ff4081;
     }
 
 
@@ -450,7 +450,7 @@ footer {
 
 
 
-/* Стили для секции "Новости" */
+
 .news {
     padding: 30px;
     max-width: 1200px;
@@ -463,10 +463,10 @@ footer {
         font-size: 3em;
         text-align: center;
         margin-bottom: 30px;
-        animation: fadeIn 1.5s ease-in-out; /* Добавляем анимацию */
+        animation: fadeIn 1.5s ease-in-out;
     }
 
-/* Стили для элемента новости */
+
 .news-item {
     margin-bottom: 40px;
     padding: 20px;
@@ -490,16 +490,16 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Стили для изображений и видео */
+
 .news-image {
-    max-width: 100%; /* Изображение не больше контейнера */
+    max-width: 100%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 15px;
 }
 
 .news-video {
-    max-width: 100%; /* Видео не больше контейнера */
+    max-width: 100%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -510,13 +510,13 @@ footer {
 
 
 
-/* Стили для Hero Banner */
+
 .hero {
-    position: relative; /* Чтобы псевдоэлемент был относительно этого контейнера */
+    position: relative;
     color: #fff;
     text-align: center;
     padding: 150px 0;
-    overflow: hidden; /* Предотвращаем выход контента за границы */
+    overflow: hidden;
 }
 
     .hero::before {
@@ -526,28 +526,27 @@ footer {
         left: 0;
         width: 100%;
         height: 100%;
-        /* Добавляем градиент поверх изображения */
-        background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0) 0%, rgba(131,109,152, 1) 100%), url('yazahozhu.jpg'); /* Замени на свой URL */
+        background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0) 0%, rgba(131,109,152, 1) 100%), url('yazahozhu.jpg');
         background-size: cover;
         background-position: center;
-        filter: blur(7px); /* Размытие для фона */
-        z-index: -1; /* Помещаем псевдоэлемент под контент */
+        filter: blur(7px);
+        z-index: -1;
     }
 
 .hero-content {
     max-width: 3000px;
     margin: 0 auto;
-    position: relative; /* Чтобы контент был над псевдоэлементом */
-    padding: 40px; /* Добавляем немного отступов для контента */
-    background-color: rgba(0, 0, 0, 0.3); /* Добавляем полупрозрачный фон для лучшей читаемости */
-    border-radius: 10px; /* Скругляем углы */
+    position: relative;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 
 .hero h1 {
     font-size: 5em;
     margin-bottom: 20px;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Добавляем тень для лучшей видимости текста */
-    animation: fadeIn 2s ease-in-out; /* Добавляем анимацию */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease-in-out;
 
 }
 
@@ -555,7 +554,7 @@ footer {
     font-size: 1.5em;
     line-height: 1.6;
     margin-bottom: 30px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Добавляем тень для лучшей видимости текста */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .hero-button {
@@ -566,14 +565,14 @@ footer {
     text-decoration: none;
     font-size: 1.5em;
     transition: background-color 0.3s ease;
-    display: inline-block; /* Чтобы можно было задать отступы */
+    display: inline-block;
 }
 
     .hero-button:hover {
         background-color: #000000;
     }
 
-/* Стили для секции "О проекте" */
+
 .about-section {
     padding: 30px;
     max-width: 1200px;
@@ -606,7 +605,7 @@ footer {
         background-color: #ff4081;
     }
 
-/* Дополнительные стили для красоты */
+
 h1, h2, h3 {
     font-weight: bold;
 }
@@ -620,7 +619,7 @@ a {
         text-decoration: underline;
     }
 
-/* Анимация */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
