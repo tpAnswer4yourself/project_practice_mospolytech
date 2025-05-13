@@ -1,5 +1,7 @@
 # project_practice_mospolytech (Проектная практика)
 
+![Logo_Polytech_rus_main](https://github.com/user-attachments/assets/cbce0172-414f-45ed-8f35-0f10ea5af6ee)
+
 ## Участники
 
 | ФИО | Учебная группа | Код направления подготовки | Профиль образовательной программы |
